@@ -85,6 +85,7 @@ function main() {
     writeFileSync(join(staging, 'README.md'), readme);
     writeFileSync(join(staging, 'AGENTS.md'), `# ${name}\n\n修改前先读本文件，再读所修改端的 AGENTS.md、README.md 和相关 docs/。\n\n${frontend !== 'none' ? '- 前端位于 web/；遵循 features 分层、状态边界、i18n 和主题约定。生成后的 core 归本项目所有。\n' : ''}${backend !== 'none' ? '- 后端位于 server/；遵循 controller/service/repository 分层。接口契约以 server/docs/API_CONTRACT.md 为准。契约变更同步前端和 server/scripts/contract-test.mjs。\n' : ''}- 只修改本项目，不需要修改或同步其他技术栈模板。\n- 按对应端说明运行检查；缺少工具链时说明未验证范围。\n`);
     writeFileSync(join(staging, 'CLAUDE.md'), '@AGENTS.md\n');
+    writeFileSync(join(staging, '.nvmrc'), '22\n');
     writeFileSync(join(staging, '.gitignore'), '**/node_modules/\n**/.env\n**/.env.*\n!**/.env.example\n**/env/dev.json\n**/.DS_Store\n');
     writeFileSync(join(staging, 'snk-project.json'), `${JSON.stringify({ name, frontend, backend, template: manifest, ...(options.module ? { goModule: options.module } : {}) }, null, 2)}\n`);
     if (existsSync(target)) rmdirSync(target); // Only an empty directory can be removed.

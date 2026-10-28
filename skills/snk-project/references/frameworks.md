@@ -9,7 +9,7 @@
 | rn | React Native + Expo | React 技术栈的原生 App | `npm install` / `npm run start` |
 | flutter | Flutter | Dart、多端 UI、动画 | `./tool/setup_platforms.sh <组织标识>` / `flutter run --dart-define-from-file=env/dev.json` |
 
-Flutter 平台生成需要用户的组织标识；没有提供时询问或保留为待办。需要 Flutter SDK。其他前端使用模板 README 声明的 Node/npm 版本；Expo 原生依赖使用 `npx expo install`。
+Flutter 平台生成需要用户的组织标识；没有提供时询问或保留为待办。需要 Flutter SDK。生成项目根目录的 `.nvmrc` 推荐 Node 22，初始化及检查优先使用此版本；较新 Node 出现工具链兼容问题时，先切回模板声明的版本验证。Expo 原生依赖使用 `npx expo install`。
 
 | 后端标识 | 框架 | 适合的需求 | 工具链 |
 |---|---|---|---|

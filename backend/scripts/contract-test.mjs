@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+/* global process, fetch, console */
 /**
  * 零依赖的接口契约测试：对一个正在运行的后端（任意模板）逐条验证 docs/API_CONTRACT.md。
  *
