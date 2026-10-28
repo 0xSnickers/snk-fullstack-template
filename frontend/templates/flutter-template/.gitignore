@@ -1,0 +1,19 @@
+# Flutter / Dart
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+.pub-cache/
+.pub/
+build/
+coverage/
+*.iml
+.idea/
+.DS_Store
+
+# 生成文件
+lib/l10n/app_localizations*.dart
+
+# 本地环境配置（提交 *.example.json）
+env/*.json
+!env/*.example.json

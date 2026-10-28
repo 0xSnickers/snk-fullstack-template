@@ -1,0 +1,5 @@
+@import 'tailwindcss';
+@import 'tw-animate-css';
+@import '../core/styles/tokens.css';
+
+/* 项目级全局样式写在这里；颜色、圆角等设计 Token 在 src/core/styles/tokens.css 中统一维护。 */

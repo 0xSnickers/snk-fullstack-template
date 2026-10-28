@@ -1,0 +1,17 @@
+include: package:flutter_lints/flutter.yaml
+
+analyzer:
+  exclude:
+    - lib/l10n/app_localizations*.dart
+    - lib/core/generated/**
+  language:
+    strict-casts: true
+
+linter:
+  rules:
+    - avoid_print
+    - prefer_single_quotes
+    - unawaited_futures
+
+formatter:
+  page_width: 100

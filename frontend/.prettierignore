@@ -1,0 +1,12 @@
+node_modules
+dist
+unpackage
+.next
+.expo
+build
+coverage
+package-lock.json
+templates/*/src/core
+templates/uniapp-template/src/manifest.json
+templates/flutter-template/lib/l10n
+templates/flutter-template/.dart_tool

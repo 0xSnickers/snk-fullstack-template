@@ -1,0 +1,8 @@
+node_modules
+dist
+unpackage
+coverage
+package-lock.json
+src/core
+src/manifest.json
+src/pages.json

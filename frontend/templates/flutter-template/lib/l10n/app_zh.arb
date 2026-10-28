@@ -1,0 +1,86 @@
+{
+  "@@locale": "zh",
+  "commonAppName": "应用模板",
+  "commonNotFound": "页面不存在",
+  "commonNotFoundDescription": "你访问的页面不存在或已被移除。",
+  "commonBackHome": "返回首页",
+  "commonRetry": "重试",
+  "commonRefresh": "刷新",
+  "commonLoading": "加载中…",
+  "commonEmpty": "暂无数据",
+  "commonConfirm": "确定",
+  "commonCancel": "取消",
+  "settingsLanguage": "语言",
+  "settingsTheme": "主题",
+  "settingsColorMode": "外观",
+  "settingsThemeNamesBlue": "蓝色",
+  "settingsThemeNamesViolet": "紫色",
+  "settingsThemeNamesEmerald": "绿色",
+  "settingsColorModeNamesLight": "浅色",
+  "settingsColorModeNamesDark": "深色",
+  "settingsColorModeNamesSystem": "跟随系统",
+  "homeReady": "{framework} 项目模板已就绪。",
+  "@homeReady": {
+    "placeholders": {
+      "framework": {
+        "type": "Object"
+      }
+    }
+  },
+  "homeLogin": "登录",
+  "homeRegister": "注册",
+  "homeLogout": "退出登录",
+  "homeSignedInAs": "已登录：{name}",
+  "@homeSignedInAs": {
+    "placeholders": {
+      "name": {
+        "type": "Object"
+      }
+    }
+  },
+  "homeGuestHint": "登录后可以体验受保护接口调用。",
+  "homeDialogOpen": "打开弹窗",
+  "homeDialogTitle": "弹窗组件示例",
+  "homeDialogDescription": "基础 UI 组件位于 src/components/ui，可按需扩展。",
+  "homeDialogAction": "知道了",
+  "navHome": "首页",
+  "navProfile": "个人信息",
+  "profileTitle": "个人信息",
+  "profileDescription": "该页面需要登录才能访问，未登录时会跳转到登录页。",
+  "profileFieldsId": "用户 ID",
+  "profileFieldsRole": "角色",
+  "usersTitle": "受保护接口",
+  "usersDescription": "登录后调用需要鉴权的用户列表接口。",
+  "usersSummary": "本次读取 {count} 条，共 {total} 条。",
+  "@usersSummary": {
+    "placeholders": {
+      "count": {
+        "type": "Object"
+      },
+      "total": {
+        "type": "Object"
+      }
+    }
+  },
+  "usersLoadFailed": "读取受保护数据失败。",
+  "authUnknownError": "请求失败，请稍后重试。",
+  "authSessionExpired": "登录已失效，请重新登录。",
+  "authFieldsName": "姓名",
+  "authFieldsEmail": "邮箱",
+  "authFieldsPassword": "密码",
+  "authValidationNameLength": "姓名长度为 2 到 50 个字符。",
+  "authValidationEmail": "请输入有效的邮箱地址。",
+  "authValidationPasswordLength": "密码至少 8 位。",
+  "authLoginTitle": "登录",
+  "authLoginDescription": "使用邮箱和密码登录。",
+  "authLoginSubmit": "登录",
+  "authLoginAlternateText": "还没有账号？",
+  "authLoginAlternateAction": "去注册",
+  "authRegisterTitle": "注册",
+  "authRegisterDescription": "创建账号后会自动登录。",
+  "authRegisterSubmit": "注册",
+  "authRegisterAlternateText": "已经有账号？",
+  "authRegisterAlternateAction": "去登录",
+  "errorTitle": "页面出现异常",
+  "errorDescription": "请稍后重试，或联系系统管理员。"
+}

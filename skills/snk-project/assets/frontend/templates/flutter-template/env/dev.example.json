@@ -1,0 +1,5 @@
+{
+  "APP_NAME": "Flutter App",
+  "APP_ENV": "development",
+  "API_BASE_URL": "http://localhost:9000/api/v1"
+}

@@ -1,0 +1,44 @@
+{
+  "name": "my-frontend-template",
+  "version": "1.0.0",
+  "private": true,
+  "description": "React / Vue / Next.js / uni-app / React Native / Flutter 前端通用项目模板：统一目录结构、请求层、鉴权、国际化、主题和质量工具。",
+  "type": "module",
+  "engines": {
+    "node": ">=20.19.0",
+    "npm": ">=10"
+  },
+  "workspaces": [
+    "packages/core",
+    "templates/reactjs-template",
+    "templates/vue3-template",
+    "templates/nextjs-template"
+  ],
+  "scripts": {
+    "create": "node scripts/create-app.mjs",
+    "sync:core": "node scripts/sync-core.mjs",
+    "check:core": "node scripts/sync-core.mjs --check",
+    "mock": "node scripts/mock-server.mjs",
+    "install:mobile": "npm --prefix templates/uniapp-template install && npm --prefix templates/react-native-template install",
+    "dev:react": "npm run dev -w reactjs-template",
+    "dev:vue": "npm run dev -w vue3-template",
+    "dev:next": "npm run dev -w nextjs-template",
+    "dev:uniapp": "npm --prefix templates/uniapp-template run dev:h5",
+    "dev:rn": "npm --prefix templates/react-native-template run start",
+    "dev:flutter": "cd templates/flutter-template && flutter run -d chrome --dart-define-from-file=env/dev.json",
+    "lint": "npm run lint --workspaces --if-present",
+    "typecheck": "npm run typecheck --workspaces --if-present",
+    "test": "npm run test --workspaces --if-present",
+    "build": "npm run build --workspaces --if-present",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "verify:web": "npm run lint && npm run typecheck && npm run test && npm run build",
+    "verify:mobile": "npm --prefix templates/uniapp-template run check && npm --prefix templates/react-native-template run check",
+    "verify:flutter": "cd templates/flutter-template && flutter analyze && flutter test",
+    "verify": "npm run check:core && npm run verify:web && npm run verify:mobile"
+  },
+  "devDependencies": {
+    "prettier": "^3.8.3",
+    "typescript": "^6.0.3"
+  }
+}

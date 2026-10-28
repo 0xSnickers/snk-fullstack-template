@@ -1,0 +1,4 @@
+/bin/
+/logs/
+.env
+coverage.out

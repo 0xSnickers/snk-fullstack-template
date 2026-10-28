@@ -1,0 +1,15 @@
+{
+  "name": "my-backend-template",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Express / NestJS / Django / Gin / Spring Boot 后端通用项目模板：同一套接口契约（统一响应、JWT 鉴权、用户 CRUD），可直接对接 my-frontend-template。",
+  "type": "module",
+  "engines": {
+    "node": ">=20.19.0"
+  },
+  "scripts": {
+    "create": "node scripts/create-app.mjs",
+    "contract": "node scripts/contract-test.mjs",
+    "verify": "bash scripts/verify-all.sh"
+  }
+}

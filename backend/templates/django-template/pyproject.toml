@@ -1,0 +1,38 @@
+[project]
+name = "django-template"
+version = "0.1.0"
+description = "Django 5 + DRF 后端模板：统一响应、JWT 鉴权、用户 CRUD。"
+requires-python = ">=3.11"
+dependencies = [
+    "django>=5.2,<6.0",
+    "djangorestframework>=3.16,<4.0",
+    "django-cors-headers>=4.7,<5.0",
+    "dj-database-url>=2.3,<4.0",
+    "python-dotenv>=1.1,<2.0",
+    "psycopg[binary]>=3.2,<4.0",
+    "pyjwt>=2.10,<3.0",
+    "gunicorn>=23.0,<24.0",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=8.3,<9.0",
+    "pytest-django>=4.11,<5.0",
+    "ruff>=0.11",
+]
+
+[tool.uv]
+package = false
+
+[tool.pytest.ini_options]
+DJANGO_SETTINGS_MODULE = "config.test_settings"
+python_files = ["test_*.py"]
+addopts = "-q"
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+extend-exclude = ["**/migrations/*", "*.md"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP"]

@@ -1,0 +1,6 @@
+# ARB 文件由模板仓库 `npm run sync:core` 从 core 语言包生成，与 Web / RN / uni-app 模板文案一致。
+arb-dir: lib/l10n
+template-arb-file: app_zh.arb
+output-localization-file: app_localizations.dart
+output-class: AppLocalizations
+nullable-getter: false

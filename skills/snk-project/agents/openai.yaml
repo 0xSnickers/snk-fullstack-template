@@ -1,0 +1,4 @@
+interface:
+  display_name: "SNK Project"
+  short_description: "选择前后端框架，使用统一架构模板创建独立项目并完成初始化。"
+  default_prompt: "使用 $snk-project 创建一个新项目，先询问我要使用的前端框架、后端框架、项目名称和保存位置。"
