@@ -4,7 +4,7 @@
   "private": true,
   "main": "expo-router/entry",
   "engines": {
-    "node": ">=20.19.0"
+    "node": ">=26.12.1"
   },
   "scripts": {
     "start": "expo start",

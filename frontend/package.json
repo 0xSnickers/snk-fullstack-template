@@ -5,7 +5,7 @@
   "description": "React / Vue / Next.js / uni-app / React Native / Flutter 前端通用项目模板：统一目录结构、请求层、鉴权、国际化、主题和质量工具。",
   "type": "module",
   "engines": {
-    "node": ">=20.19.0",
+    "node": ">=26.12.1",
     "npm": ">=10"
   },
   "workspaces": [

@@ -21,6 +21,10 @@ export default defineConfig({
   },
   test: {
     environment: 'jsdom',
+    // Vitest 3 uses poolOptions for Node worker arguments.
+    poolOptions: {
+      forks: { execArgv: ['--no-experimental-webstorage'] },
+    },
     globals: true,
     setupFiles: './src/test/setupTests.ts',
     include: ['src/**/*.test.ts', 'tests/**/*.test.ts'],

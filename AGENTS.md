@@ -12,3 +12,5 @@
 原模板文档中的 my-frontend-template 指本仓库 frontend/，my-backend-tempalte 或 my-backend-template 指 backend/。接口契约以 backend/docs/API_CONTRACT.md 为准。生成后的项目独立演进。
 
 不提交本地 .env、依赖、构建缓存。用户本地环境配置不属于模板资源。
+
+Node 工具链统一使用 26（当前验证版本 26.12.1），保持 .nvmrc、engines、Docker 和 CI 一致；遇到新 Node 兼容问题修复工具链，不通过降级解决。

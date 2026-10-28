@@ -46,8 +46,8 @@
     "typescript-eslint": "^8.32.1",
     "vitest": "^3.1.4"
   },
-  "description": "Express 5 + TypeScript + Prisma \u540e\u7aef\u6a21\u677f\uff1a\u7edf\u4e00\u54cd\u5e94\u3001JWT \u9274\u6743\u3001\u7528\u6237 CRUD\u3002",
+  "description": "Express 5 + TypeScript + Prisma 后端模板：统一响应、JWT 鉴权、用户 CRUD。",
   "engines": {
-    "node": ">=20.19.0"
+    "node": ">=26.12.1"
   }
 }

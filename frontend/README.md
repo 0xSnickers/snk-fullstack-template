@@ -54,7 +54,7 @@ npm run dev:rn              # Expo：扫码 / 按 a、i、w
 npm run dev:flutter         # Flutter Web（需安装 Flutter SDK）
 ```
 
-> 需要 Node.js 20.19+（推荐 22，见 `.nvmrc`）和 npm 11（`npm i -g npm@11`；npm 10 安装时可能报 `Cannot read properties of null (reading 'edgesOut')`）。Flutter 模板需要 Flutter 3.32+。
+> 统一使用 Node.js 26.12.1+（见 `.nvmrc`）和 npm 11（`npm i -g npm@11`；npm 10 安装时可能报 `Cannot read properties of null (reading 'edgesOut')`）。Flutter 模板需要 Flutter 3.32+。
 
 ## 仓库结构
 

@@ -94,3 +94,7 @@ npm run test            # 单次运行
 npm run test:watch      # 监听模式
 npm run test:coverage   # 覆盖率（需安装 @vitest/coverage-v8）
 ```
+
+## Node 26 的测试环境
+
+Node 26 原生提供进程级 Web Storage。Vitest 的 jsdom 工作进程使用 `--no-experimental-webstorage`，使 localStorage/sessionStorage 来自 jsdom 的页面环境；此参数仅作用于测试工作进程，不影响浏览器和应用服务。Vitest 4 配置 `test.execArgv`，uni-app 的 Vitest 3 配置 `test.poolOptions.forks.execArgv`。

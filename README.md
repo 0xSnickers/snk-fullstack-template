@@ -4,7 +4,7 @@
 
 ## 安装
 
-需要 Node.js / npx。仓库：`0xSnickers/snk-fullstack-template`。无需发布 npm 包：
+统一使用 Node.js 26（已验证 26.12.1）及 npx。仓库：`0xSnickers/snk-fullstack-template`。无需发布 npm 包：
 
 ```bash
 # 全局安装到 Codex 和 Claude Code

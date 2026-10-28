@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # 一键验证全部模板：临时 PostgreSQL（端口 5433，数据在 .verify/pgdata，结束后删除）
 # 每个模板依次执行：安装 → 迁移 → 自带测试 → 构建 → 启动 → 接口契约测试（24 项）。
-# 依赖：PostgreSQL 客户端工具（initdb / pg_ctl / createdb）、Node 20+、uv、Go 1.23+、JDK 21+。
+# 依赖：PostgreSQL 客户端工具（initdb / pg_ctl / createdb）、Node 26.12.1+、uv、Go 1.23+、JDK 21+。
 #   ./scripts/verify-all.sh                 # 全部
 #   ./scripts/verify-all.sh gin springboot  # 只验证指定模板
 set -o pipefail
