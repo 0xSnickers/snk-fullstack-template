@@ -14,7 +14,7 @@ npx skills add 0xSnickers/snk-fullstack-template --skill snk-project -g -a codex
 npx skills add 0xSnickers/snk-fullstack-template --skill snk-project -g
 ```
 
-私有仓库需要当前电脑已经具备访问该仓库的 Git 凭据。只有推送后的内容才能远程安装；本仓库按个人使用场景设为私有。
+本仓库为公开仓库，下载安装无需 GitHub 登录。
 
 本地预览安装（在本目录执行）：
 
